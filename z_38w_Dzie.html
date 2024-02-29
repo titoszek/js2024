@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h2{
+    color: green;
+    font-size: 44;
+}
+h3{
+    color: red;
+    font-size: 44;
+}
+body{
+    background-color: silver;
+}
+</style>
+<meta charset="UTF-8">
+<title>Tymon Dzieninis 3k</title>
+<script type="text/javascript">
+    var l1=5, l2=12, l3=9, l4=13;
+document.write("<h2> Moje nazwisko to: Tymon Dzieninis<br> liczba1="+l1+" <br> liczba2="+l2+"<br> liczba3="+l3+"<br>liczba4="+l4+"")
+document.write("<h3>----MENU----<br>3-wyświetlanie teorii o operatorach<br>29-czy liczba należy do przedziału (od "+l1+" ; do "+l2+"]<br>58-czy liczba należy do przedziału (-oo ; "+l3+") lub ["+l4+" ; +oo)")
+
+    var opcja=parseFloat(prompt("Podaj opcje= "));
+
+if(opcja==3){
+    document.write("<h2>Jesteś w opcja 3 --> teoria");
+}else if((opcja>6)&&(opcja<13)){
+    document.write("<h2>Jesteś w opcja 27 --> przedział");
+}
+
+else if(opcja==65){
+    document.write("<h2>Jesteś w opcja 65 --> teoria");
+}else{
+    document.write("<h3>Nie ma takiej opcji</h3>");
+}
+</script>
+</head>
+</html>

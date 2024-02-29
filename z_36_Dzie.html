@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1 style="color: green;">Menu</h1>
+    <h2 style="color: red;">1 - Czerwony</h2>
+    <h2 style="color: blue;">2 - Niebieski</h2>
+    <input type="button" onclick="spr()" name="spr_Dzie" value="Oblicz">
+    <br>
+    <script>
+    function spr() {
+        var x=prompt("Podaj kolor");
+        if(x==1 || x.toLocaleLowerCase()=="czerwony"){
+            document.write('<h1 style="color:red;">Wbrałeś kolor czerwony</h1><br>');
+        }
+        else if(x==2 || x.toLocaleLowerCase()=="niebieski"){
+            document.write('<h1 style="color:blue;">Wbrałeś kolor niebieski</h1><br>');
+        }
+        else{
+            document.write("Błąd");
+        }
+    }
+    </script>
+</body>
+</html>
